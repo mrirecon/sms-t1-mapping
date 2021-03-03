@@ -4,7 +4,7 @@ Xiaoqing Wang, Sebastian Rosenzweig, Nick Scholand, H.Christian M.Holme, Martin 
 **Model-Based Reconstruction for Simultaneous Multi-Slice T1 Mapping using Single-Shot Inversion-Recovery Radial FLASH**. <br>
 Magnetic Resonance in Medicine: DOI: 10.1002/mrm.28497.[1,2]
 
-The algorithms have been integrated into the Berkeley Advanced Reconstruction Toolbox (BART) [3] (commit e52b2f13).
+The algorithms have been integrated into the Berkeley Advanced Reconstruction Toolbox (BART) [3] (version 0.7.00).
 
 The raw files are hosted on ZENODO and must be downloaded first:
 

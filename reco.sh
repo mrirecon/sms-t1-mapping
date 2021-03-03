@@ -110,9 +110,9 @@ echo $k_filter
 
 
 if [ $sms -eq 1 ]; then
-        OMP_NUM_THREADS=10 nice -n10 bart moba $opts -j$lambda -N -t $traj $ksp $TI $reco $sens
+        OMP_NUM_THREADS=10 nice -n10 bart moba $opts -j$lambda -N --no_alpha_min_exp_decay -t $traj $ksp $TI $reco $sens
 else
-        OMP_NUM_THREADS=10 nice -n10 bart moba $opts -M -j$lambda -N -t $traj $ksp $TI $reco $sens
+        OMP_NUM_THREADS=10 nice -n10 bart moba $opts -M -j$lambda -N --no_alpha_min_exp_decay -t $traj $ksp $TI $reco $sens
 fi
 
 
