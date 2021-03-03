@@ -153,7 +153,7 @@ then
         	bart scale 1. dataT_final $out_data 
 	fi
 elif [ $# -eq 4 ]; then
-        bart cc -A -p 1 dataT_final data_final_cc
+        bart cc -A -p 8 dataT_final data_final_cc
 	bart transpose 5 10 data_final_cc $out_data 
 fi
 

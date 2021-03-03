@@ -101,18 +101,18 @@ which bart
 bart version
 
 if [ $k_filter -eq 1 ] ; then
-	opts="-L -k -i5 -d4 -B0.3 -C300 -s0.475 -R3 -o$overgrid"
+	opts="-L -k -i10 -d4 -B0.3 -C300 -s0.475 -R3 -o$overgrid"
 else
-	opts="-L -i5 -d4 -B0.3 -C300 -s0.475 -R3 -o$overgrid"
+	opts="-L -i10 -d4 -B0.3 -C300 -s0.475 -R3 -o$overgrid"
 fi
 
 echo $k_filter
 
 
 if [ $sms -eq 1 ]; then
-        OMP_NUM_THREADS=30 nice -n10 bart moba $opts -g -j$lambda -N -t $traj $ksp $TI $reco $sens
+        OMP_NUM_THREADS=10 nice -n10 bart moba $opts -j$lambda -N -t $traj $ksp $TI $reco $sens
 else
-        OMP_NUM_THREADS=30 nice -n10 bart moba $opts -M -g -j$lambda -N -t $traj $ksp $TI $reco $sens
+        OMP_NUM_THREADS=10 nice -n10 bart moba $opts -M -j$lambda -N -t $traj $ksp $TI $reco $sens
 fi
 
 
