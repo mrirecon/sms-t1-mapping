@@ -47,7 +47,7 @@ TR=$TR
 res=$res
 
 if [ ! -e $reco ] ; then
-        echo "Input file does not exist." >&2
+        echo "Input file 'reco' does not exist." >&2
         echo "$usage" >&2
         exit 1
 fi

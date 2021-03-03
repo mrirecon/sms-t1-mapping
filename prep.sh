@@ -97,7 +97,7 @@ then
 	out_TI=$(readlink -f "$5")
 fi
 
-if [ ! -e ${input}.cfl ] ; then
+if [ ! -e ${input}.cfl ] && [ ! -e ${input} ] ; then
         echo "Input file does not exist." >&2
         echo "$usage" >&2
         exit 1

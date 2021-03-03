@@ -53,22 +53,27 @@ TI=$(readlink -f "$1")
 traj=$(readlink -f "$2")
 ksp=$(readlink -f "$3")
 reco=$(readlink -f "$4")
-sens=$(readlink -f "$5")
+
+if [ "$#" -lt 5 ] ; then
+        sens=""
+else
+	sens=$(readlink -f "$5")
+fi
 
 if [ ! -e $TI ] ; then
-        echo "Input file does not exist." >&2
+        echo "Input file 'TI' does not exist." >&2
         echo "$usage" >&2
         exit 1
 fi
 
 if [ ! -e $traj ] ; then
-        echo "Input file does not exist." >&2
+        echo "Input file 'traj' does not exist." >&2
         echo "$usage" >&2
         exit 1
 fi
 
 if [ ! -e $ksp ] ; then
-        echo "Input file does not exist." >&2
+        echo "Input file 'ksp' does not exist." >&2
         echo "$usage" >&2
         exit 1
 fi
