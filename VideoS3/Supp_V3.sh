@@ -14,12 +14,13 @@
 
 set -e
 
-export PATH=$TOOLBOX_PATH:$PATH
 
 if [ ! -e $TOOLBOX_PATH/bart ] ; then
 	echo "\$TOOLBOX_PATH is not set correctly!" >&2
 	exit 1
 fi
+export PATH=$TOOLBOX_PATH:$PATH
+export BART_COMPAT_VERSION="v0.7.00"
 
 dir=../liver
 dir1=..
