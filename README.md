@@ -1,3 +1,8 @@
+**The main repository has moved to: https://gitlab.tugraz.at/ibi/mrirecon/papers/SMS-T1-Mapping**
+
+**Please check there for updates.**
+
+
 These scripts reproduce the experiments described in the article:
 
 Xiaoqing Wang, Sebastian Rosenzweig, Nick Scholand, H.Christian M.Holme, Martin Uecker. <br>
